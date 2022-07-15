@@ -10,6 +10,9 @@ Things you may want to cover:
 
 * Configuration
 
+Documentation for the Application
+  https://keep.google.com/share?tid=true#home
+  
 * Database creation - 
 
 * Database initialization - Postres

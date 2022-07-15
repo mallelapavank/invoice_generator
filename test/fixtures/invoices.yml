@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  invoice_number: MyString
+  tnc: MyText
+  notes: MyText
+
+two:
+  invoice_number: MyString
+  tnc: MyText
+  notes: MyText
