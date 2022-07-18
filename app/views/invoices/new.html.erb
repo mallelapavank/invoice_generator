@@ -1,1 +1,18 @@
-<%= binding.pry %>
+<h1>New Invoice</h1>
+
+<%= form_with model: @invoice do |form| %>
+  <div>
+    <%= form.text_field :invoice_number %>
+    <%= form.label :invoice_number %><br>
+  </div>
+
+  <%= form.fields_for :items do |item_form| %>
+      Name: <%= item_form.text_field :name %>
+      Description: <%= item_form.text_field :description %>
+      Amount: <%= item_form.text_field :amount %>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
