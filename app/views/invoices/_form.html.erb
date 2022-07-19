@@ -1,0 +1,33 @@
+<%= form_with model: @invoice do |f| %>
+  <div class='field'>
+		<%= f.text_field :invoice_number %>
+		<%= f.label :invoice_number %><br>
+	</div>
+	
+	<div class='field'>
+		<%= f.date_field :due_date %>
+		<%= f.label :due_date %><br>
+	</div>
+
+	<h3> Items</h3>
+	<div id='items'>
+    <%= f.fields_for :items do |item| %>
+      <%= render 'item_fields', :f => item %>
+    <% end %>
+		
+    <div class='links'>
+      <%= link_to_add_association 'add item', f, :items %>
+    </div><br>
+  </div>
+	<div class='field'>
+		<%= f.text_area :notes %>
+		<%= f.label :notes %>
+	</div>
+	<div class='field'>
+		<%= f.text_area :tnc %>
+		<%= f.label :tnc %>
+	</div>
+	<div>
+		<%= f.submit %>
+	</div>
+<% end %>

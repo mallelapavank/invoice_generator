@@ -24,3 +24,7 @@ Documentation for the Application
 * Deployment instructions - Yet to be decided
 
 * ...
+
+
+Postgres commands
+sudo --user postgres psql postgres
