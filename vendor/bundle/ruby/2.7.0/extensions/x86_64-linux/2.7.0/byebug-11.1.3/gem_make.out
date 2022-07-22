@@ -1,0 +1,19 @@
+current directory: /home/krazy/workspace/learn/invoice_generator/vendor/bundle/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+/home/krazy/.rvm/rubies/ruby-2.7.3/bin/ruby -I /home/krazy/.rvm/rubies/ruby-2.7.3/lib/ruby/2.7.0 -r ./siteconf20220719-26799-1lb71im.rb extconf.rb
+creating Makefile
+
+current directory: /home/krazy/workspace/learn/invoice_generator/vendor/bundle/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/krazy/workspace/learn/invoice_generator/vendor/bundle/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/krazy/workspace/learn/invoice_generator/vendor/bundle/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -m 0755 byebug.so ./.gem.20220719-26799-ycp7k0/byebug
