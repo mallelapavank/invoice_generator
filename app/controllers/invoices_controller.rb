@@ -8,15 +8,15 @@ class InvoicesController < ApplicationController
   end
 
   def create
-    binding.pry
     @invoice = current_user.invoices.new(invoice_params)
     # TODO: Add items as nested attributes
-    @invoice.items = 
-    @invoice.save!
+    if @invoice.save!
+      redirect_to invoices_path
+    end
   end
 
   private
   def invoice_params
-    params.require(:invoice).permit(:invoice_number, items_attributes: [:id, :name, :description, :amount])
+    params.require(:invoice).permit(:invoice_number, :due_date, :generation_date, :tnc, items_attributes: [:id, :name, :description, :amount])
   end
 end

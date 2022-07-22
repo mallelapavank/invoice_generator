@@ -9,6 +9,11 @@
 		<%= f.label :due_date %><br>
 	</div>
 
+	<div class='field'>
+		<%= f.date_field :generation_date %>
+		<%= f.label :generation_date %><br>
+	</div>
+
 	<h3> Items</h3>
 	<div id='items'>
     <%= f.fields_for :items do |item| %>
