@@ -6,28 +6,4 @@
 <% end %>
 <%= link_to 'Create Invoice', new_invoice_path %> 
 
-<h1>Invoices</h1>
-
-<table>
-	<thead>
-		<tr>
-			<th>Invoice Number</th>
-			<th>Invoice Date</th>
-			<th>Due Date</th>
-			<!-- html comments like this :-) -->
-			<%#= rails comments this %>
-		</tr>
-	</thead>
-	<tbody>
-		<% @invoices.each do |invoice| %>
-			<tr>
-				<td><%= invoice.invoice_number %></td>
-				<td><%= invoice.generation_date %></td>
-				<td><%= invoice.due_date %></td>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
-
-
-
+<div id="invoice-root" invoices="<%= @invoices.to_json %>"></div>

@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "dependencies": {
+    "shakapacker": "file:../../../../"
+  },
+  "license": "MIT"
+}
