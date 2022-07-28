@@ -14,15 +14,16 @@
 // const images = require.context('./images', true)
 // const imagePath = (name) => images(name, true)
 
-
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import Invoices from '../invoices';
+import App from '../app';
 
 const container = document.getElementById('invoice-root');
 const root = createRoot(container);
 
 document.addEventListener('DOMContentLoaded', () => {
   const invoices = container.getAttribute("invoices");
-  root.render(<Invoices allInvoices={JSON.parse(invoices)} />);
+  root.render(
+    <App allInvoices={JSON.parse(invoices)} />
+  );
 });
