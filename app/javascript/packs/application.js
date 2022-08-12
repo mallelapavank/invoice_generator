@@ -16,6 +16,8 @@
 
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Understand from '../understand'
 import App from '../app';
 
 const container = document.getElementById('invoice-root');
@@ -24,6 +26,12 @@ const root = createRoot(container);
 document.addEventListener('DOMContentLoaded', () => {
   const invoices = container.getAttribute("invoices");
   root.render(
-    <App allInvoices={JSON.parse(invoices)} />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App allInvoices={JSON.parse(invoices)} />} />
+      </Routes>
+      <p>hello</p>
+    </BrowserRouter> 
   );
 });
+
