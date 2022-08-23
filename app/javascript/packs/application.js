@@ -19,6 +19,7 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Understand from '../understand'
 import App from '../app';
+import NewInvoice from '../invoices/newInvoice';
 
 const container = document.getElementById('invoice-root');
 const root = createRoot(container);
@@ -29,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App allInvoices={JSON.parse(invoices)} />} />
+        <Route path="/invoices/new" element={<NewInvoice />} />
       </Routes>
-      <p>hello</p>
     </BrowserRouter> 
   );
 });

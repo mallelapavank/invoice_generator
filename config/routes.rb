@@ -5,5 +5,8 @@ Rails.application.routes.draw do
   root to: 'invoices#index'
   
   resources :invoices
-  get 'understand', to: 'invoices#index'
+  get 'invoices/new', to: 'invoices#index'
 end
+
+
+

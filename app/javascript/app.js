@@ -1,13 +1,13 @@
 import React from 'react';
-import Invoices, {Header} from './invoices';
-import { Link } from "react-router-dom";
+import Invoices from './invoices';
+import Header from './invoices/header'
 
 const App = (props) => {
 	return (
 		<div>
+			<h1>React starts here</h1>
 			<Header />
 			<Invoices invoicesData={props.allInvoices} />
-			<Link to="/invoices">Create Invoice</Link> |{" "}
 		</div>
 	)
 }

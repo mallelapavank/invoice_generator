@@ -27,10 +27,4 @@ const Invoices = (props) => {
 	)
 }
 
-export const Header = () => {
-	return (
-		<a href="">Create Invoice</a>
-	)
-}
-
 export default Invoices

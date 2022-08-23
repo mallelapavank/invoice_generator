@@ -4,6 +4,8 @@
 <% else %>
     <%= link_to "login", new_user_session_path %>
 <% end %>
-<%= link_to 'Create Invoice', new_invoice_path %> 
+<%# <%= link_to 'Create Invoice', new_invoice_path %>  %>
+<br />
+----------------------------------Rails until here-----------------------------------
 
 <div id="invoice-root" invoices="<%= @invoices.to_json %>"></div>
